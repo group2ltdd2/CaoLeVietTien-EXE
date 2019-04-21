@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Test General"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/cal"
+                    android:id="@+id/btncal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Calculator" />
+            </LinearLayout
+                >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent">
+                <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/draw"
+                    android:id="@+id/btnSensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sensor"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/anim"
+                    android:id="@+id/btnAnim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Animation" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent">
+                <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/camera"
+                    android:id="@+id/btnCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Camera"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent">
+                <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/googlemaps"
+                    android:id="@+id/btnMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Map"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
