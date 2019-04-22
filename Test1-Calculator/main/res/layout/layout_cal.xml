@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activity_cal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/edtOperator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/operator"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result"/>
+            <EditText
+                android:id="@+id/edtRes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/calBtn"
+                android:text="@string/number_7" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_marginLeft="2dp"
+                style="@style/calBtn"
+                android:text="@string/number_8" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                style="@style/calBtn"
+                android:text="@string/number_9" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/calBtn"
+
+                android:text="@string/add"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/calBtn"
+                android:text="@string/number_4"/>
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_marginLeft="2dp"
+                style="@style/calBtn"
+                android:text="@string/number_5" />
+
+            <Button
+                android:id="@+id/btn_6"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+
+                style="@style/calBtn"
+                android:text="@string/number_6" />
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/calBtn"
+                android:text="@string/minus"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_1"
+
+
+                style="@style/calBtn"
+                android:text="@string/number_1" />
+
+            <Button
+                android:id="@+id/btn_2"
+
+                android:layout_marginLeft="2dp"
+
+                style="@style/calBtn"
+                android:text="@string/number_2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                style="@style/calBtn"
+                android:text="@string/number_3" />
+
+            <Button
+                android:id="@+id/btn_multiple"
+                style="@style/calBtn"
+                android:text="@string/mutiple"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_0"
+                style="@style/calBtn"
+                android:text="@string/number_0"/>
+
+            <Button
+                android:id="@+id/btn_c"
+                android:layout_marginLeft="2dp"
+                style="@style/calBtn"
+                android:text="@string/clean" />
+
+            <Button
+                android:id="@+id/btn_res"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                style="@style/calBtn"
+                android:text="@string/equal" />
+
+            <Button
+                android:id="@+id/btn_div"
+                style="@style/calBtn"
+                android:text="@string/div"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
